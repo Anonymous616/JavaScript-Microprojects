@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: #121212;
+  color: white;
+  width: 100vw;
+}
+
+.container {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #242121;
+  width: 380px;
+  height: 620px;
+}
+
+#add-todo {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #03dac6;
+}
+
+.modal {
+  background-color: #242121;
+  overflow: hidden;
+  height: 200px;
+  max-height: 200px;
+}
+
+.modal .modal-content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: hidden;
+}
+
+.modal .modal-content::-webkit-scrollbar {
+  display: none;
+}
+
+.modal .modal-footer {
+  background-color: #242121;
+}
+
+#modal-btn {
+  background-color: #03dac6;
+}
+
+.input-field input[type="text"] {
+  color: white;
+}
+
+.input-field input:focus {
+  color: #03dac6;
+}
+
+.input-field input[type="text"]:focus + label {
+  color: #03dac6;
+}
+
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #03dac6;
+  box-shadow: 0 1px 0 0 #03dac6;
+}
+
+#todo-list {
+  margin: 20px 0px 0px 40px;
+  width: 270px;
+  background-color: #242121;
+  /* background-color: red; */
+  border: none;
+  height: 450px;
+  overflow: auto;
+}
+
+/* The emerging W3C standard
+   that is currently Firefox-only */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #242121 #121212;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background: #121212;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #242121;
+  border-radius: 20px;
+  border: 3px solid #121212;
+}
+
+#todo-list li label span {
+  background-color: #242121;
+  width: 100%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}

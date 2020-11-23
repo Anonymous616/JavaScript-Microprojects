@@ -5,5 +5,3 @@
 ## Contents
 
 1. To Do List
-2. Color Flipper
-# JavaScript-MicroProjects

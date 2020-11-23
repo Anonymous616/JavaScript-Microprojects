@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.1.1.min.js"
+    ></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/0511029692.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS & JS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <script defer src="index.js"></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <!-- Modal Trigger -->
+    <a
+      id="add-todo"
+      class="btn-floating btn-large waves-effect waves-light modal-trigger"
+      href="#add-todo-modal"
+      ><i class="material-icons" style="color: black; font-size: 25px"
+        >add</i
+      ></a
+    >
+    <!-- Modal Structure -->
+    <div id="add-todo-modal" class="modal modal-fixed-footer">
+      <form>
+        <div class="modal-content">
+          <div class="row">
+            <h4>Add To Do</h4>
+            <div class="input-field col s12">
+              <input id="todo-input" type="text" class="" />
+              <label for="todo-input">To Do</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            id="modal-btn"
+            href="#!"
+            class="modal-close waves-effect waves-green btn-flat"
+            ><b>add</b></a
+          >
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <h3 style="text-align: center">To Do List</h3>
+      <ul id="todo-list"></ul>
+    </div>
+  </body>
+</html>
