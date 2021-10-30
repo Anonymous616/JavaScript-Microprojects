@@ -1,123 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Import Google Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <title>Contents</title>
-</head>
+  </head>
 
-<style>
+  <style>
     * {
-        box-sizing: border-box;
-        font-family: sans-serif;
+      box-sizing: border-box;
+      font-family: sans-serif;
     }
 
     body {
-        padding: 0;
-        margin: 0;
-        font-size: 1.5rem;
+      padding: 0;
+      margin: 0;
+      font-size: 1.5rem;
 
-        width: 100vw;
-        max-width: 100%;
+      width: 100vw;
+      max-width: 100%;
 
-        min-height: 100vh;
+      min-height: 100vh;
 
-        background-color: #121212;
-        color: white;
+      background-color: #121212;
+      color: white;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     a {
-        color: inherit;
-        text-decoration: none;
+      color: inherit;
+      text-decoration: none;
     }
 
     .title {
-        font-size: 3rem;
-        font-weight: 800;
-        text-align: center;
+      font-size: 3rem;
+      font-weight: 800;
+      text-align: center;
     }
 
     .catalog {
-        margin: 5rem 3rem;
+      margin: 5rem 3rem;
     }
 
     .catalog__container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
     }
 
     .catalog__item {
-        background-color: rgba(255, 255, 255, 0.02);
-        opacity: 0.5;
+      background-color: rgba(255, 255, 255, 0.02);
+      opacity: 0.5;
 
-        border: 1px solid transparent;
-        border-radius: 10px;
+      border: 1px solid transparent;
+      border-radius: 10px;
 
-        padding: 1rem 2rem;
+      padding: 1rem 2rem;
 
-        display: grid;
-        grid-template-columns: auto 1fr;
-        place-items: center;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      place-items: center;
 
-        gap: 1rem;
+      gap: 1rem;
 
-        transition: 400ms;
+      transition: 400ms;
     }
 
     .catalog__item:hover {
-        background-color: rgba(255, 255, 255, 0.04);
-        opacity: 1;
-        border: 1px solid cyan;
+      background-color: rgba(255, 255, 255, 0.04);
+      opacity: 1;
+      border: 1px solid cyan;
     }
-</style>
+  </style>
 
-<body>
+  <body>
     <header>
-        <h1 class="title">JavaScript Microprojects</h1>
+      <h1 class="title">JavaScript Microprojects</h1>
     </header>
     <main>
-        <section class="catalog">
+      <section class="catalog">
+        <div class="catalog__container">
+          <!-- To Do List -->
+          <a class="catalog__item" target="_blank" href="to-do-list/index.html">
+            <div class="catalog__item-icon material-icons">️list_alt</div>
+            <div class="catalog__item-name">To Do List</div>
+          </a>
 
-            <div class="catalog__container">
+          <!-- Color Flipper -->
+          <a
+            class="catalog__item"
+            target="_blank"
+            href="color-flipper/simple.html"
+          >
+            <div class="catalog__item-icon material-icons">palette</div>
+            <div class="catalog__item-name">Color Flipper</div>
+          </a>
 
-                <!-- To Do List -->
-                <a class="catalog__item" target="_blank" href="ToDoList/index.html">
-                    <div class="catalog__item-icon material-icons">️list_alt</div>
-                    <div class="catalog__item-name">To Do List</div>
-                </a>
-
-                <!-- Color Flipper -->
-                <a class="catalog__item" target="_blank" href="ColorFlipper/simple.html">
-                    <div class="catalog__item-icon material-icons">palette</div>
-                    <div class="catalog__item-name">
-                        Color Flipper
-                    </div>
-                </a>
-
-                <!-- Tic Tac Toe -->
-                <a class="catalog__item" target="_blank" href="TicTacToe/index.html">
-                    <div class="catalog__item-icon material-icons">grid_3x3</div>
-                    <div class="catalog__item-name">
-                        Tic Tac Toe
-                    </div>
-                </a>
-
-            </div>
-
-        </section>
+          <!-- Tic Tac Toe -->
+          <a
+            class="catalog__item"
+            target="_blank"
+            href="tic-tac-toe/index.html"
+          >
+            <div class="catalog__item-icon material-icons">grid_3x3</div>
+            <div class="catalog__item-name">Tic Tac Toe</div>
+          </a>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
